@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840360ac95a2f3c47880f7655f2aaecb, type: 3}
+  m_Name: Electric
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemName: "\uC804\uAE30\uC758 \uD1B1\uB2C8"
+  icon: {fileID: 21300000, guid: 7609f522463d4f44a9838e3febe6078c, type: 3}
+  itemDescription: "\uD750\uB984\uC744 \uB530\uB77C \uC5D0\uB108\uC9C0\uB97C \uC804\uB2EC\uD558\uBA70,
+    \uADF8 \uC6C0\uC9C1\uC784 \uC18D\uC5D0 \uC0DD\uBA85\uC758 \uBD88\uAF43\uC774
+    \uD0C0\uC624\uB974\uB9AC\uB77C."
+  itemDefine: "\uD750\uB984\uC744 \uB530\uB77C \uC5D0\uB108\uC9C0\uB97C \uC804\uB2EC\uD558\uBA70,
+    \uADF8 \uC6C0\uC9C1\uC784 \uC18D\uC5D0 \uC0DD\uBA85\uC758 \uBD88\uAF43\uC774
+    \uD0C0\uC624\uB974\uB9AC\uB77C."
+  itemID: 88a2f86793a567e4aa167d3fd3cf046d
+  goldGeneration: 500
+  dropChance: 0

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840360ac95a2f3c47880f7655f2aaecb, type: 3}
+  m_Name: Space
+  m_EditorClassIdentifier: 
+  itemType: 3
+  itemName: "\uACF5\uAC04\uC758 \uD1B1\uB2C8"
+  icon: {fileID: 21300000, guid: 9d738f9acd086e64f8f9d7ce9e954efa, type: 3}
+  itemDescription: "\uB05D\uC5C6\uB294 \uC5EC\uBC31\uC18D \uBAA8\uB4E0 \uAC83\uC774
+    \uC790\uB9AC\uD55C \uADF8 \uC548\uC5D0 \uBB34\uC218\uD55C \uAC00\uB2A5\uC131\uC774
+    \uC228\uC26C\uB77C"
+  itemDefine: "\uB05D\uC5C6\uB294 \uC5EC\uBC31\uC18D \uBAA8\uB4E0 \uAC83\uC774 \uC790\uB9AC\uD55C
+    \uADF8 \uC548\uC5D0 \uBB34\uC218\uD55C \uAC00\uB2A5\uC131\uC774 \uC228\uC26C\uB77C"
+  itemID: 9f787d20bfa2dc749a5444351f17a4b9
+  goldGeneration: 3000
+  dropChance: 0

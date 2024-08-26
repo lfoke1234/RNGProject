@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840360ac95a2f3c47880f7655f2aaecb, type: 3}
+  m_Name: Wind
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemName: "\uBC14\uB78C\uC758 \uD1B1\uB2C8"
+  icon: {fileID: 21300000, guid: 58cf60179cd3c094ca431836caeff1f4, type: 3}
+  itemDescription: "\uD558\uB298\uC758 \uC228\uACB0\uC774\uC790 \uC790\uC720\uB85C\uC6B4
+    \uC601\uD63C\uC774\uBA70 \uC6C0\uC9C1\uC784\uACFC \uBCC0\uD654\uB97C \uC8FC\uB3C4\uD558"
+  itemDefine: "\uD558\uB298\uC758 \uC228\uACB0\uC774\uC790 \uC790\uC720\uB85C\uC6B4
+    \uC601\uD63C\uC774\uBA70 \uC6C0\uC9C1\uC784\uACFC \uBCC0\uD654\uB97C \uC8FC\uB3C4\uD558"
+  itemID: 6f4373be7f5c1624fa5c074fb76969fc
+  goldGeneration: 500
+  dropChance: 0

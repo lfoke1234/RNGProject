@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840360ac95a2f3c47880f7655f2aaecb, type: 3}
+  m_Name: Metal
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemName: "\uAE08\uC18D\uC758 \uD1B1\uB2C8"
+  icon: {fileID: 21300000, guid: b7dd4f205c602e7409e23fc47c60fc55, type: 3}
+  itemDescription: "\uB2E8\uB2E8\uD568 \uC18D \uD798\uC744 \uAC04\uC9C1\uD558\uBA70
+    \uADF8 \uBC18\uC9DD\uC784 \uC18D\uC5D0 \uC758\uC9C0\uAC00 \uAE43\uB4E4\uB9AC\uB77C"
+  itemDefine: "\uB2E8\uB2E8\uD568 \uC18D \uD798\uC744 \uAC04\uC9C1\uD558\uBA70 \uADF8
+    \uBC18\uC9DD\uC784 \uC18D\uC5D0 \uC758\uC9C0\uAC00 \uAE43\uB4E4\uB9AC\uB77C"
+  itemID: 54af8977ff67a4146bae9e8580e3d61b
+  goldGeneration: 500
+  dropChance: 0

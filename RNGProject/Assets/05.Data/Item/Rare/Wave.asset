@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840360ac95a2f3c47880f7655f2aaecb, type: 3}
+  m_Name: Wave
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemName: "\uD30C\uB3D9\uC758 \uD1B1\uB2C8"
+  icon: {fileID: 21300000, guid: 1c14cbbc4875080498acfc27284206f9, type: 3}
+  itemDescription: " \uB05D\uC5C6\uC774 \uC804\uD574\uC9C0\uB294 \uBB3C\uACB0\uC774
+    \uBAA8\uB4E0 \uAC83\uC744 \uAD00\uD1B5\uD558\uBA70, \uADF8 \uD750\uB984 \uC18D\uC5D0
+    \uC6B0\uC8FC\uC758 \uB9AC\uB4EC\uC774 \uAE43\uB4E4\uB9AC\uB77C."
+  itemDefine: " \uB05D\uC5C6\uC774 \uC804\uD574\uC9C0\uB294 \uBB3C\uACB0\uC774 \uBAA8\uB4E0
+    \uAC83\uC744 \uAD00\uD1B5\uD558\uBA70, \uADF8 \uD750\uB984 \uC18D\uC5D0 \uC6B0\uC8FC\uC758
+    \uB9AC\uB4EC\uC774 \uAE43\uB4E4\uB9AC\uB77C."
+  itemID: 547527c2ef96ee74db57e108d476e305
+  goldGeneration: 500
+  dropChance: 0
