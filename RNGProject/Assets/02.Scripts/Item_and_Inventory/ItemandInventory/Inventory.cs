@@ -95,39 +95,117 @@ public class Inventory : MonoBehaviour, ISaveManager
 
     private void InitializeItemLists()
     {
-#if UNITY_EDITOR
-        string rarePath = "Assets/05.Data/Item/Rare";
-        string uniquePath = "Assets/05.Data/Item/Unique";
-        string epicPath = "Assets/05.Data/Item/Epic";
-        string legendPath = "Assets/05.Data/Item/Legend";
-
-        rareItems = LoadItemsFromPath(rarePath);
-        uniqueItems = LoadItemsFromPath(uniquePath);
-        epicItems = LoadItemsFromPath(epicPath);
-        legendItems = LoadItemsFromPath(legendPath);
-#endif
+        rareItems = LoadRareItemFormItemDataBase();
+        uniqueItems = LoadUniqueItemFormItemDataBase();
+        epicItems = LoadEpicItemFormItemDataBase();
+        legendItems = LoadEpicItemFormItemDataBase();
     }
 
-    private List<ItemData> LoadItemsFromPath(string path)
+    #region Init ItemList
+    private List<ItemData> LoadItemsFromResources(string path)
+    {
+        ItemData[] items = Resources.LoadAll<ItemData>(path);
+        return new List<ItemData>(items);
+    }
+
+    private List<ItemData> LoadRareItemFormItemDataBase()
     {
         List<ItemData> items = new List<ItemData>();
 
-#if UNITY_EDITOR
-        string[] assetGuids = AssetDatabase.FindAssets("t:ItemData", new[] { path });
-
-        foreach (string guid in assetGuids)
+        foreach (ItemData item in itemDataBase)
         {
-            string assetPath = AssetDatabase.GUIDToAssetPath(guid);
-            ItemData item = AssetDatabase.LoadAssetAtPath<ItemData>(assetPath);
-            if (item != null)
-            {
+            if (item.itemType == ItemType.Rare)
                 items.Add(item);
-            }
+            else
+                continue;
         }
-#endif
 
         return items;
     }
+
+    private List<ItemData> LoadUniqueItemFormItemDataBase()
+    {
+        List<ItemData> items = new List<ItemData>();
+
+        foreach (ItemData item in itemDataBase)
+        {
+            if (item.itemType == ItemType.Unique)
+                items.Add(item);
+            else
+                continue;
+        }
+
+        return items;
+    }
+
+    private List<ItemData> LoadEpicItemFormItemDataBase()
+    {
+        List<ItemData> items = new List<ItemData>();
+
+        foreach (ItemData item in itemDataBase)
+        {
+            if (item.itemType == ItemType.Epic)
+                items.Add(item);
+            else
+                continue;
+        }
+
+        return items;
+    }
+
+    private List<ItemData> LoadLegendItemFormItemDataBase()
+    {
+        List<ItemData> items = new List<ItemData>();
+
+        foreach (ItemData item in itemDataBase)
+        {
+            if (item.itemType == ItemType.Legend)
+                items.Add(item);
+            else
+                continue;
+        }
+
+        return items;
+    }
+    #endregion
+
+    #region Old Init
+    //    private void InitializeItemLists()
+    //    {
+    //#if UNITY_EDITOR
+    //        string rarePath = "Assets/05.Data/Item/Rare";
+    //        string uniquePath = "Assets/05.Data/Item/Unique";
+    //        string epicPath = "Assets/05.Data/Item/Epic";
+    //        string legendPath = "Assets/05.Data/Item/Legend";
+
+    //        rareItems = LoadItemsFromPath(rarePath);
+    //        uniqueItems = LoadItemsFromPath(uniquePath);
+    //        epicItems = LoadItemsFromPath(epicPath);
+    //        legendItems = LoadItemsFromPath(legendPath);
+    //#endif
+    //    }
+
+    //    private List<ItemData> LoadItemsFromPath(string path)
+    //    {
+    //        List<ItemData> items = new List<ItemData>();
+
+    //#if UNITY_EDITOR
+    //        string[] assetGuids = AssetDatabase.FindAssets("t:ItemData", new[] { path });
+
+    //        foreach (string guid in assetGuids)
+    //        {
+    //            string assetPath = AssetDatabase.GUIDToAssetPath(guid);
+    //            ItemData item = AssetDatabase.LoadAssetAtPath<ItemData>(assetPath);
+    //            if (item != null)
+    //            {
+    //                items.Add(item);
+    //            }
+    //        }
+    //#endif
+
+    //        return items;
+    //    }
+    #endregion
 
 
 
