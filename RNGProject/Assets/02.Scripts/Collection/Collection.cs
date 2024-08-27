@@ -87,17 +87,88 @@ public class Collection : MonoBehaviour, ISaveManager
     #region Init Dictionary
     private void InitializeItemLists()
     {
-#if UNITY_EDITOR
-        string rarePath = "Assets/05.Data/Item/Rare";
-        string uniquePath = "Assets/05.Data/Item/Unique";
-        string epicPath = "Assets/05.Data/Item/Epic";
-        string legendPath = "Assets/05.Data/Item/Legend";
+        AddItemsToCollection(AddRareItemToCollection());
+        AddItemsToCollection(AddUniqueItemToCollection());
+        AddItemsToCollection(AddEpicItemToCollection());
+        AddItemsToCollection(AddLegnedItemToCollection());
 
-        AddItemsToCollection(LoadItemsFromPath(rarePath));
-        AddItemsToCollection(LoadItemsFromPath(uniquePath));
-        AddItemsToCollection(LoadItemsFromPath(epicPath));
-        AddItemsToCollection(LoadItemsFromPath(legendPath));
-#endif
+//#if UNITY_EDITOR
+//        string rarePath = "Assets/05.Data/Item/Rare";
+//        string uniquePath = "Assets/05.Data/Item/Unique";
+//        string epicPath = "Assets/05.Data/Item/Epic";
+//        string legendPath = "Assets/05.Data/Item/Legend";
+
+//        AddItemsToCollection(LoadItemsFromPath(rarePath));
+//        AddItemsToCollection(LoadItemsFromPath(uniquePath));
+//        AddItemsToCollection(LoadItemsFromPath(epicPath));
+//        AddItemsToCollection(LoadItemsFromPath(legendPath));
+//#endif
+    }
+
+
+    private List<ItemData> AddRareItemToCollection()
+    {
+        List<ItemData> items= new List<ItemData>();
+
+
+        foreach (var item in Inventory.Instance.itemDataBase)
+        {
+            Debug.Log(Inventory.Instance);
+            if (item.itemType == ItemType.Rare)
+            {
+                items.Add(item);
+            }
+        }
+
+        return items;
+    }
+
+    private List<ItemData> AddUniqueItemToCollection()
+    {
+        List<ItemData> items = new List<ItemData>();
+
+
+        foreach (var item in Inventory.Instance.itemDataBase)
+        {
+            if (item.itemType == ItemType.Unique)
+            {
+                items.Add(item);
+            }
+        }
+
+        return items;
+    }
+
+    private List<ItemData> AddEpicItemToCollection()
+    {
+        List<ItemData> items = new List<ItemData>();
+
+
+        foreach (var item in Inventory.Instance.itemDataBase)
+        {
+            if (item.itemType == ItemType.Epic)
+            {
+                items.Add(item);
+            }
+        }
+
+        return items;
+    }
+
+    private List<ItemData> AddLegnedItemToCollection()
+    {
+        List<ItemData> items = new List<ItemData>();
+
+
+        foreach (var item in Inventory.Instance.itemDataBase)
+        {
+            if (item.itemType == ItemType.Legend)
+            {
+                items.Add(item);
+            }
+        }
+
+        return items;
     }
 
     private void AddItemsToCollection(List<ItemData> items)
@@ -116,7 +187,7 @@ public class Collection : MonoBehaviour, ISaveManager
         List<ItemData> items = new List<ItemData>();
 
 #if UNITY_EDITOR
-        string[] assetGuids = AssetDatabase.FindAssets("t:ItemData", new[] { path });
+        string[] assetGuids = AssetDatabase.FindAssets("t:Item", new[] { path });
 
         foreach (string guid in assetGuids)
         {
